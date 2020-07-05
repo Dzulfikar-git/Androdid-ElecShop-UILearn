@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyComputerShopApp</string>
+    <string name="items_name">Item Name</string>
+    <string name="items_detail">Item Detail</string>
+    <string name="items_price">Item Price</string>
+    <string name="user_details">User Details</string>
+    <string name="item_count">1</string>
+</resources>

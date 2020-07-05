@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailActivity"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/id_itemdetail_img"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    tools:src="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/id_itemdetail_img"
+                    android:layout_toRightOf="@id/id_itemdetail_img"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_itemdetail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items_name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/id_itemdetail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items_price"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/holo_red_dark"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <ImageButton
+                            android:id="@+id/id_btn_min"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/img_minus_btn"/>
+
+                        <EditText
+                            android:id="@+id/id_text_itemcount"
+                            android:layout_width="30dp"
+                            android:layout_height="37dp"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:text="@string/item_count"
+                            android:textSize="15sp" />
+
+                        <ImageButton
+                            android:id="@+id/id_btn_add"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/img_plus_btn"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <Button
+                            android:id="@+id/id_btn_buy"
+                            android:layout_width="80dp"
+                            android:layout_height="35dp"
+                            android:drawableLeft="@drawable/img_buy_btn"
+                            android:text="Buy"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#05D026"/>
+
+                        <Button
+                            android:id="@+id/id_btn_addcart"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:drawableLeft="@drawable/img_addtocart_btn"
+                            android:text="Add Cart"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="#05D026"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/id_btn_favorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:drawableLeft="@drawable/img_favorite_btn"
+                        android:text="Favorite"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:paddingRight="20dp"
+                        android:textColor="@android:color/white"
+                        android:background="#FA581D"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Details"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#05D026"/>
+
+                <TextView
+                    android:id="@+id/id_itemdetail_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/items_detail"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Review"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#05D026"/>
+
+                <EditText
+                    android:id="@+id/id_text_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/id_btn_addreview"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:text="Add Review"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textColor="@android:color/white"
+                    android:background="#05D026"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#05D026"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    
+                    <ImageView
+                        android:id="@+id/img_user_review"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/img_user"/>
+                    
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img_user_review"
+                        android:layout_toEndOf="@id/img_user_review"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User1"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item is Great!"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_user_review"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/img_user"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img_user_review"
+                        android:layout_toEndOf="@id/img_user_review"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User2"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item is Great!"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_user_review"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/img_user"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img_user_review"
+                        android:layout_toEndOf="@id/img_user_review"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User3"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item is Great!"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_user_review"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/img_user"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img_user_review"
+                        android:layout_toEndOf="@id/img_user_review"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User4"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item is Great!"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/img_user_review"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/img_user"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/img_user_review"
+                        android:layout_toEndOf="@id/img_user_review"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User5"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item is Great!"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
